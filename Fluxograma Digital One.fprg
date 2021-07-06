@@ -4,18 +4,20 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Pc_Casa"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-07-06 10:40:33 "/>
+        <attribute name="saved" value="2021-07-06 11:42:05 "/>
         <attribute name="created" value="UGNfQ2FzYTtQQ19DQVNBLVBDOzIwMjEtMDctMDY7IjEwOjI4OjA3ICI7MjU1NQ=="/>
-        <attribute name="edited" value="UGNfQ2FzYTtQQ19DQVNBLVBDOzIwMjEtMDctMDY7IjEwOjQwOjMzICI7MTsyNjU2"/>
+        <attribute name="edited" value="UGNfQ2FzYTtQQ19DQVNBLVBDOzIwMjEtMDctMDY7IjExOjQyOjA1ICI7MzsyNjYw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media, totalnotas" type="Real" array="False" size=""/>
             <input variable="nota1"/>
             <input variable="nota2"/>
             <input variable="nota3"/>
             <input variable="nota4"/>
+            <assign variable="totalnotas" expression="nota1+nota2+nota3+nota4"/>
+            <output expression="totalnotas" newline="True"/>
             <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
             <output expression="media" newline="True"/>
         </body>
